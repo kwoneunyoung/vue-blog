@@ -29,16 +29,24 @@
 
     </div>
 
-
+    <List :blog="blog" />
   </div>
   
 </template>
 
 <script>
+import List from './components/List.vue'
+import blog from './assets/blog'
 
 export default {
   name: 'App',
-  components: {
+  data() {
+    return {
+      blog : blog
+    }
+  },
+  components : {
+    List : List
   }
 }
 </script>
