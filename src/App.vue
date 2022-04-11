@@ -22,9 +22,12 @@
         </ul>
       </div>
     </nav>
+    <router-link to="/">홈페이지</router-link>
+    <router-link to="/list">리스트페이지</router-link>
 
-    <router-view :blog="blog"></router-view>
-
+    <div class="mt-5">
+      <router-view :blog="blog"></router-view>
+    </div>
   </div>
   
 </template>
@@ -45,11 +48,11 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
 </style>
